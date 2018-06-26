@@ -1,53 +1,24 @@
-.center-block-main {
-  max-width: 1920px;
-  margin: auto;
-  /*Центрування блоку*/
+body {
+  height: 100%;
+  width: 100%;
 }
 
-.map{
-    margin:  auto;
-    position: absolute;
-    z-index: 0;
-    max-width: 1920px;
-  margin: 0 auto;
-  overflow: hidden;
-}
-.nav{
- max-width: 1920px;
-  margin: auto;
-  overflow: hidden;
-  position: relative; 
-  z-index: 1;*/
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
-    max-width: 800px;*/
-height: 500px; */
-  background-color: palevioletred; */
+a {
+  color: blue;
 }
 
-li{
-   text-decoration: none;
-    background-color: rgb(221, 213, 213);
-    padding: 10px 16px ;
-    list-style-type: none;
-    border-radius: 6px;
-    cursor: pointer; */
-    
-    
-}*
+a:link {
+  color: blue;
+}
 
-li:hover {
-    background: #f19a20; 
-      } 
-a{
-    font-family: 'Noto Serif', serif;
-    font-weight: 700;
-    font-size: 18px;
-    color: rgb(3, 7, 70);
-    text-decoration: none;
-   
-}*/
+a:visited {
+  color: purple;
+}
 
+a:hover {
+  text-decoration: none;
+}
 
-
+a:active {
+  color: purple;
+}
