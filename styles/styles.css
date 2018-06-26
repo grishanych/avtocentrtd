@@ -22,3 +22,16 @@ a:hover {
 a:active {
   color: purple;
 }
+
+
+@media (max-width: 520px) {
+  
+}
+
+@media (min-width: 520px) and (max-width: 992px) {
+  
+}
+
+@media (min-width: 992px) and (max-width: 1280px) {
+  
+}
