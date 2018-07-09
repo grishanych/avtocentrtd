@@ -1,6 +1,12 @@
+html{
+  overflow-x: hidden;
+}
+
 body {
 height: 100%;
 width: 100%;
+overflow-x: hidden;
+
 }
 
 
@@ -71,9 +77,11 @@ color: purple;
     width: 710px;
     height: 150px ;
   /*background: red;*/
+    background: url(../images/logo1.png) no-repeat ;
+    background-position: left bottom;
 }
 .menu{
-    margin:0 0 25px -13px;
+    margin:0 0 25px 170px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -181,6 +189,8 @@ p{
     text-transform: uppercase;
 }
 .contacts_street h3{
+    display: flex;
+    
     color: #1c1b1b;
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
@@ -189,9 +199,12 @@ p{
 
 .phone_number{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    margin-top: -30px;
+    width: 220px;
+    margin-top: -30px;        
+    background: url(../images/tel.png) no-repeat ;
+    background-position: left ;
 }
 
 
@@ -206,6 +219,8 @@ p{
     margin: 0 auto;
     width: 465px;
     height: 290px ;
+    background: url(../images/logo1.png) no-repeat ;
+    background-position: left bottom;
 }
 
 .footer_img{
@@ -214,7 +229,7 @@ p{
 
 
 .footer_tel{
-    margin: 150px 0 25px 100px;
+    margin: 150px 0 25px 200px;
     display: flex;
     flex-direction: column;
     align-items: center;
