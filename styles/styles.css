@@ -12,8 +12,16 @@ overflow-x: hidden;
 
 .menu li{
   list-style: none;
+  /*text-align: center;*/
 }
-
+@media (max-width: 900px) {
+  .menu li  {
+font-size: 38px;
+text-align: center;
+margin-left: -420px ;
+text-transform: uppercase;
+text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}}
 
 .menu li a {
   width: 52px;
@@ -26,6 +34,14 @@ overflow-x: hidden;
   text-decoration: none;
 
 }
+
+/*@media (max-width: 900px) {
+  .menu li a {
+font-size: 18px;
+text-transform: uppercase;
+text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}}*/
+
 
 /*a:link {
 
@@ -69,6 +85,16 @@ color: purple;
     background: url(../images/bg.jpg) no-repeat center;
 }
 
+@media (max-width: 1450px) {
+  .intro {
+   /*background: red;*/
+}}
+
+@media (max-width: 900px) {
+  .intro {
+display: inline-block;
+}}
+
 .intro-about-logo{
     display: flex;
     flex-direction: row;
@@ -80,6 +106,13 @@ color: purple;
     background: url(../images/logo1.png) no-repeat ;
     background-position: left bottom;
 }
+@media (max-width: 900px) {
+  .intro-about-logo {
+display: inline-block;
+margin-left: 25%;
+}}
+
+
 .menu{
     margin:0 0 25px 170px;
     display: flex;
@@ -90,23 +123,69 @@ color: purple;
     height: 50px ;
     background: url(../images/navi2.png) no-repeat center;
 }
+@media (max-width: 900px) {
+  .menu {
+  display: inline-block;
+  background: none;
+  margin:200px 0 0 70px;
+}}
 
 .about_tire_fitting{
     margin: 0 auto;
     display: flex;
+    flex-wrap:wrap
     max-width: 1920px;
     height: 1575px;
     background-image:url(../images/bg_info.jpg);
 }
+@media (max-width: 1250px) {
+  .about_tire_fitting {
+   /*background: green;*/
+
+}}
+@media (max-width: 900px) {
+  .about_tire_fitting {
+   /*background: green;*/
+   /*margin-left: 100px;*/
+
+}}
+
+@media (max-width: 900px) {
+  .about_tire_fitting {
+   /*background: blue;*/
+   height: 100%;
+   display: inline-block;
+   /*text-align: center;*/
+
+}}
 
 .about_tire_fitting_info{
+    display: flex;
+    flex-direction: column;
     width: 50%;
     margin: 100px 0 0 440px;
     max-width: 505px;
     height: 100%;
-    display: flex;
-    flex-direction: column;
+
 }
+@media (max-width: 1450px) {
+  .about_tire_fitting_info {
+   margin: 100px 0 0 140px;
+
+}}
+@media (max-width: 1250px) {
+  .about_tire_fitting_info {
+   margin: 100px 0 0 40px;
+
+}}
+
+@media (max-width: 900px) {
+  .about_tire_fitting_info {
+  /* background: red;*/
+   display: inline-block;
+   
+/*width: auto;*/
+}}
 
 .about_tire_fitting_info h1{
     margin-left: 175px;
@@ -117,6 +196,16 @@ color: purple;
     line-height: 19.27px;
     text-transform: uppercase;
 }
+@media (max-width: 1450px) {
+  .about_tire_fitting_info h1 {
+   margin-left: 100px
+
+}}
+@media (max-width: 1250px) {
+  .about_tire_fitting_info h1 {
+   margin-left: 50px
+
+}}
 
 .about_tire_fitting_info li{
     list-style: none;
@@ -168,17 +257,55 @@ p{
 .about_tire_fitting_contact{
     /*  background-color: green;*/
     width: 50%;
+    display: flex;
+    flex-direction: column;
 
 }
+@media (max-width: 900px) {
+  .about_tire_fitting_contact {
+   /*background: magenta;*/
+   display: inline-block;
 
+}}
 .location{
     margin: 100px 0 0 240px;
 
 }
+@media (max-width: 1450px) {
+  .location {
+     margin: 100px 0 0 140px;
+
+}}
+@media (max-width: 1250px) {
+  .location {
+     margin: 100px 0 0 40px;
+
+}}
+@media (max-width: 900px) {
+  .location {
+     margin: 100px 0 0 10px;
+
+}}
 
 .contacts_street{
     margin: 100px 0 0 450px;
 }
+@media (max-width: 1450px) {
+  .contacts_street {
+  margin: 100px 0 0 250px;
+
+}}
+@media (max-width: 900px) {
+  .contacts_street {
+  margin: 100px 0 0 100px;
+
+}}
+/*@media (max-width: 1250px) {
+  .location {
+     margin: 100px 0 0 150px;
+
+}}*/
+
 
 .contacts_street h2{
     color: #db1515;
@@ -236,6 +363,11 @@ p{
     justify-content: space-around;
 }
 
+@media (max-width: 900px) {
+  .footer_tel {
+  margin: 150px 0 25px 180px;
+
+}}
 .footer_tel h2{
     color: #db1515;
     font-family: 'Exo 2', sans-serif;
