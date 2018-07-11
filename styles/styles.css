@@ -10,42 +10,7 @@ overflow-x: hidden;
 }
 
 
-.menu li{
-  list-style: none;
-  /*text-align: center;*/
-}
-/*@media (max-width: 900px) {
-  .menu li  {
-font-size: 38px;
-text-align: center;
-margin-left: -420px ;
-text-transform: uppercase;
-text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-}}*/
-
-.menu li a {
-  width: 52px;
-  height: 13px;
-  color: #ffffff;
-  font-family: 'Exo 2', sans-serif;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 13.54px;
-  text-decoration: none;
-
-}
-
-/*@media (max-width: 900px) {
-  .menu li a {
-font-size: 18px;
-text-transform: uppercase;
-text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-}}*/
-
-
 /*a:link {
-
-
 }
 
 a:visited {
@@ -60,21 +25,36 @@ a:active {
 color: purple;
 }*/
 
-
 @media (max-width: 520px) {
-
 }
-
 @media (min-width: 520px) and (max-width: 992px) {
-
 }
-
 @media (min-width: 992px) and (max-width: 1280px) {
-
 }
-
-
-
+@media (max-width: 350px) {
+  .tire_fitting {
+    margin-left: -30px;
+}}  
+@media (max-width: 350px) {
+  .balancing {
+    margin-left: -30px;
+}}  
+@media (max-width: 350px) {
+  .painting_disks {
+    margin-left: -30px;
+}}  
+@media (max-width: 350px) {
+  .disks {
+    margin-left: -30px;
+}}  
+ @media (max-width: 350px) {
+  .argon_welding {
+    margin-left: -30px;
+}} 
+ @media (max-width: 350px) {
+  .lathe_work {
+    margin-left: -30px;
+}} 
 /* Intro */
 
 .intro {
@@ -85,16 +65,6 @@ color: purple;
     background: url(../images/bg.jpg) no-repeat center;
 }
 
-@media (max-width: 1450px) {
-  .intro {
-   /*background: red;*/
-}}
-
-/*@media (max-width: 900px) {
-  .intro {
-display: inline-block;
-}}*/
-
 .intro-about-logo{
     display: flex;
     flex-direction: row;
@@ -102,18 +72,25 @@ display: inline-block;
     margin: 1px auto;
     width: 710px;
     height: 150px ;
-  /*background: red;*/
     background: url(../images/logo1.png) no-repeat ;
     background-position: left bottom;
 }
-/*@media (max-width: 900px) {
+@media (max-width: 630px) {
   .intro-about-logo {
-display: inline-block;
-margin-left: 25%;
-}}*/
+    display: inline-block;
+    margin-left: 33%;
 
+}}
+@media (max-width: 450px) {
+  .intro-about-logo {
+    margin-left: 30%;
+}}
+@media (max-width: 350px) {
+  .intro-about-logo {
+    margin-left: 25%;
+}}
 
-.menu{
+  .menu{
     margin:0 0 25px 170px;
     display: flex;
     flex-direction: row;
@@ -123,12 +100,39 @@ margin-left: 25%;
     height: 50px ;
     background: url(../images/navi2.png) no-repeat center;
 }
-/*@media (max-width: 900px) {
+@media (max-width: 630px) {
   .menu {
-  display: inline-block;
-  background: none;
-  margin:200px 0 0 70px;
-}}*/
+    display: inline-block;
+    background: none;
+    margin:200px 0 0 50px;
+    padding-bottom: 50px;
+}}
+
+  .menu li{
+    list-style: none;
+ }
+
+@media (max-width: 630px) {
+  .menu li {
+    padding-top: 15px;
+}}
+
+.menu li a {
+  width: 52px;
+  height: 13px;
+  color: #ffffff;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 13.54px;
+  text-decoration: none;
+}
+
+@media (max-width: 630px) {
+  .menu li a{
+    font-size: 26px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}}
 
 .about_tire_fitting{
     margin: 0 auto;
@@ -139,70 +143,70 @@ margin-left: 25%;
     background-image:url(../images/bg_info.jpg);
 }
 
-
-
 @media (max-width: 800px) {
   .about_tire_fitting {
     display: inline-block;
-    /*margin-left: 25%;*/
-
-
+   
 }}
 
-.about_tire_fitting_info{
+  .about_tire_fitting_info{
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: 100px 0 0 440px;
     max-width: 505px;
-    /*height: 100%;*/
+  }
 
-}
 @media (max-width: 1450px) {
   .about_tire_fitting_info {
-   margin: 100px 0 0 240px;
+    margin: 100px 0 0 240px;
 
 }}
+
 @media (max-width: 1250px) {
   .about_tire_fitting_info {
-   margin: 100px 0 0 140px;
-
+     margin: 100px 0 0 140px;
 }}
 
 @media (max-width: 900px) {
   .about_tire_fitting_info {
      margin: 100px 0 0 10px;
-   
-}}
+   }}
+
 @media (max-width: 800px) {
   .about_tire_fitting_info {
-   display: inline-block; 
-   margin: 10px 25% 0 25%;
+     display: inline-block; 
+     margin: 10px 25% 0 25%;
 }}
 
 @media (max-width: 480px) {
   .about_tire_fitting_info {
-    margin: 10px 10% 0 15%;
+     margin: 10px 10% 0 15%;
 
 }}
 
-.about_tire_fitting_info h1{
-    margin-left: 175px;
-    color: #db1515;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 19.27px;
-    text-transform: uppercase;
+  .about_tire_fitting_info h1{
+     margin-left: 175px;
+     color: #db1515;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 19.27px;
+     text-transform: uppercase;
 }
 @media (max-width: 1450px) {
   .about_tire_fitting_info h1 {
-   margin-left: 100px
+    margin-left: 100px
 
 }}
 @media (max-width: 1250px) {
   .about_tire_fitting_info h1 {
-   margin-left: 50px
+     margin-left: 50px
+
+}}
+@media (max-width: 350px) {
+  .about_tire_fitting_info h1 {
+     margin-left: 25px
 
 }}
 
@@ -212,7 +216,6 @@ margin-left: 25%;
 
 .about_tire_fitting_info li a{
     display: flex;
-    /*margin-top: -20px;*/
     padding-left: 39px;
     padding-top:10px;
     color: #ffffff;
@@ -230,11 +233,9 @@ margin-left: 25%;
     background-image:url(../images/info_div.png) ;
 }
 
-
 .balancing{
     max-width: 400px;
 }
-     
 
 p{
     color: #1c1b1b;
@@ -252,88 +253,63 @@ p{
      max-width: 400px;
 }
 
-
 .about_tire_fitting_contact{
-    /*  background-color: green;*/
     width: 50%;
     display: flex;
     flex-direction: column;
-
 }
 @media (max-width: 800px) {
   .about_tire_fitting_contact {
-   /*background: magenta;*/
-   display: inline-block;
+    display: inline-block;
     margin: 10px 25% 0 25%;
-
 }}
 @media (max-width: 620px) {
   .about_tire_fitting_contact {
     margin: 10px 10% 0 15%;
-
 }}
-
 @media (max-width: 480px) {
   .about_tire_fitting_contact {
     margin: 10px 10% 0 5%;
-
 }}
 
 .location{
     margin: 100px 0 0 240px;
-    
+  }
 
-}
 @media (max-width: 1450px) {
   .location {
      margin: 100px 0 0 140px;
-
 }}
 @media (max-width: 1250px) {
   .location {
      margin: 100px 0 0 40px;
-
 }}
 @media (max-width: 900px) {
   .location {
      margin: 100px 0 0 10px;
-
 }}
 @media (max-width: 800px) {
   .location {
      margin: 50px 0 0 0;
-
 }}
 
-@media .iframe(max-width: 800px) {
-  .location {
-     margin: 50px 0 0 0;
-     width:290px;
-    height:294px; 
-
-}}
-
-
-
-.contacts_street{
+  .contacts_street{
     margin: 100px 0 0 450px;
 }
 @media (max-width: 1450px) {
   .contacts_street {
-  margin: 100px 0 0 250px;
+    margin: 100px 0 0 250px;
 
 }}
 @media (max-width: 900px) {
   .contacts_street {
-  margin: 100px 0 0 100px;
+    margin: 100px 0 0 100px;
 
 }}
-/*@media (max-width: 1250px) {
-  .location {
-     margin: 100px 0 0 150px;
-
-}}*/
-
+@media (max-width: 450px) {
+  .contacts_street {
+     margin-left: 25% ;
+}}
 
 .contacts_street h2{
     color: #db1515;
@@ -345,13 +321,11 @@ p{
 }
 .contacts_street h3{
     display: flex;
-    
     color: #1c1b1b;
     font-family: 'Exo 2', sans-serif;
     font-size: 18px;
     font-weight: 400;
 }
-
 .phone_number{
     display: flex;
     flex-direction: column;
@@ -361,14 +335,11 @@ p{
     background: url(../images/tel.png) no-repeat ;
     background-position: left ;
 }
-
-
 .footer {
     width: 100%;
     height: 375px;
     background: url(../images/footer.jpg) no-repeat center;
 }
-
 .footer_logo {
     display: flex;
     margin: 0 auto;
@@ -377,12 +348,9 @@ p{
     background: url(../images/logo1.png) no-repeat ;
     background-position: left bottom;
 }
-
 .footer_img{
     margin-top: 150px;
 }
-
-
 .footer_tel{
     margin: 150px 0 25px 200px;
     display: flex;
@@ -390,10 +358,9 @@ p{
     align-items: center;
     justify-content: space-around;
 }
-
 @media (max-width: 900px) {
   .footer_tel {
-  margin: 150px 0 25px 180px;
+    margin: 150px 0 25px 180px;
 
 }}
 .footer_tel h2{
@@ -403,7 +370,6 @@ p{
     font-weight: 400;
     text-transform: uppercase;
 }
-
 .footer_tel h3{
     color: #ffffff;
     font-family: 'Exo 2', sans-serif;
