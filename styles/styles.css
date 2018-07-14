@@ -137,7 +137,6 @@ color: purple;
 .about_tire_fitting{
     margin: 0 auto;
     display: flex;
-    flex-wrap:wrap
     max-width: 1920px;
     height: 100%;
     background-image:url(../images/bg_info.jpg);
@@ -292,6 +291,11 @@ p{
   .location {
      margin: 50px 0 0 0;
 }}
+@media (max-width: 340px) {
+  .location {
+     margin-left: -12px;
+}}
+
 
   .contacts_street{
     margin: 100px 0 0 450px;
