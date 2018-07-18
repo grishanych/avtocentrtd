@@ -291,6 +291,18 @@ p{
   .location {
      margin: 50px 0 0 0;
 }}
+@media (max-width: 480px) {
+  .location {
+     margin-left: 50px;
+}}
+@media (max-width: 400px) {
+  .location {
+     margin-left: 25px;
+}}
+@media (max-width: 360px) {
+  .location {
+     margin-left: 10px;
+}}
 @media (max-width: 340px) {
   .location {
      margin-left: -12px;
