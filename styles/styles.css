@@ -8,118 +8,80 @@ width: 100%;
 overflow-x: hidden;
 
 }
-
-
-/*a:link {
-}
-
-a:visited {
-color: purple;
-}
-
-a:hover {
-text-decoration: none;
-}
-
-a:active {
-color: purple;
-}*/
-#galleria {
-  height:320px;
-  margin-bottom: 40px;
-}
-
-@media (max-width: 520px) {
-}
-@media (min-width: 520px) and (max-width: 992px) {
-}
-@media (min-width: 992px) and (max-width: 1280px) {
-}
-@media (max-width: 350px) {
-  .tire_fitting {
-    margin-left: -30px;
-}}  
-@media (max-width: 350px) {
-  .balancing {
-    margin-left: -30px;
-}}  
-@media (max-width: 350px) {
-  .painting_disks {
-    margin-left: -30px;
-}}  
-@media (max-width: 350px) {
-  .disks {
-    margin-left: -30px;
-}}  
- @media (max-width: 350px) {
-  .argon_welding {
-    margin-left: -30px;
-}} 
- @media (max-width: 350px) {
-  .lathe_work {
-    margin-left: -30px;
-}} 
 /* Intro */
 
 .intro {
     size: 100%;
     width: 100%;
-    height: 550px;
+    height: 650px;
     display: block;
-    background: url(../images/bg.jpg) no-repeat center;
+    background: url(../images/bg1.jpg) no-repeat center;
 }
 
-.intro-about-logo{
+.intro_about_logo{
     display: flex;
     flex-direction: row;
     align-items: center;
     margin: 1px auto;
-    width: 710px;
+    width: 1250px;
     height: 150px ;
-    background: url(../images/logo1.png) no-repeat ;
-    background-position: left bottom;
-}
-@media (max-width: 630px) {
-  .intro-about-logo {
-    display: inline-block;
-    margin-left: 33%;
+    background: url(../images/linee.png) no-repeat ;
+    background-position: center;
 
-}}
-@media (max-width: 450px) {
-  .intro-about-logo {
-    margin-left: 30%;
-}}
-@media (max-width: 350px) {
-  .intro-about-logo {
-    margin-left: 25%;
-}}
+}
+
+ @media (min-device-width : 320px) and (max-device-width : 768px){
+ .intro_about_logo {
+    display: inline-block;
+    background: none;
+    width: 300px;
+    height: 100%;
+    margin: 0 25%;
+}
+
+}
+
+
+.make_block{
+  display: flex;
+  margin: 15px 0 0 15px;
+}
 
   .menu{
-    margin:0 0 25px 170px;
+    margin:20px 0 25px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
     width: 460px;
     height: 50px ;
-    background: url(../images/navi2.png) no-repeat center;
+    
 }
-@media (max-width: 630px) {
-  .menu {
-    display: inline-block;
-    background: none;
-    margin:200px 0 0 50px;
-    padding-bottom: 50px;
-}}
+
+ @media (min-device-width : 320px) and (max-device-width : 768px){
+   .menu {
+      display: inline-block;
+      background: none;
+      margin:25px 0 0 25%;
+      padding-bottom: 50px;
+      
+    }
+
+    .menu li {
+         padding-top: 15px;
+    }
+
+    .menu li a{
+        font-size: 26px;
+        text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+    }
+  }
 
   .menu li{
     list-style: none;
  }
 
-@media (max-width: 630px) {
-  .menu li {
-    padding-top: 15px;
-}}
+
 
 .menu li a {
   width: 52px;
@@ -132,63 +94,460 @@ color: purple;
   text-decoration: none;
 }
 
-@media (max-width: 630px) {
-  .menu li a{
-    font-size: 26px;
-    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
-}}
+.contacts_street{
+    margin: 15px 0 0 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    width: 450px;
+    height: 60px ;
+    
+   }
 
-.about_tire_fitting{
-    margin: 0 auto;
+  @media (min-device-width : 992px) and (max-device-width : 1375px){
+  .contacts_street {
+  flex-direction: column;
+  margin: 15px 0 0 -80px;
+    }}
+
+   @media (min-device-width : 768px) and (max-device-width : 992px){
+  .contacts_street {
+    flex-direction: column;
+    margin: 150px 0 0 -200px;
+    }}
+
+  @media (min-device-width : 320px) and (max-device-width : 768px){
+  .contacts_street {
+   display: block;
+    margin: 40px auto;
+    }}
+
+
+.phone_number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    height: 40px;
+    margin-top: -10px;        
+    background: url(../images/tel.png), url(../images/str.png) ;
+    background-repeat: no-repeat, no-repeat;
+    background-position: left center, right 5% center ;
+}
+
+ @media (min-device-width : 320px) and (max-device-width : 1375px){
+  .phone_number {
+    width: 200px;
+   padding-top: 50px;
+   background-position:  left center ;
+    }}
+
+.phone_number h3{
+    display: flex;
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    margin-top: 0;
+    text-align:  justify;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 1375px) {
+  .phone_number h3 {
+    margin: -25px 0 0 20px;  
+}}
+.gallery {
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 1920px;
+  height: 960px;
+  background: url(../images/bg2.jpg) repeat ;
+  }
+
+.block_photo {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1350px;
+  justify-content: space-between;
+  }
+
+@media (max-width: 1220px) {
+  .block_photo {
+    max-width: 800px;
+    justify-content: space-around;
+    align-items: center;
+}
+  .gallery{
+    height: 100%;
+    padding: 70px 0;
+}
+
+  .first_column{
+    padding: 50px 25px;
+}
+}
+
+.first_column {
+  display: flex;
+  flex-direction: column;
+}
+
+.holder{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/1.png) no-repeat;
+    display: block;
+}
+
+.holder h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 21%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.block{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/11.png) no-repeat;  
+}
+
+
+.holder:hover .block{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder2{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/5.png) no-repeat;
+}
+
+
+.holder2 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 25%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+
+.block2{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/222.png) no-repeat; 
+}
+
+
+.holder2:hover .block2{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder3{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/2.png) no-repeat;
+}
+
+.holder3 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 9%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.holder3 p{
+    color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    margin: -200px 9%;
+    text-align: center;
+     display: block;
+    position: relative;
+    z-index: 1;
+}
+.block3{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/22.png) no-repeat;
+}
+
+
+.holder3:hover .block3{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder4{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/6.png) no-repeat;
+    background-position: bottom center;
+}
+
+
+.holder4 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 255px 19%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.block4{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/11.png) no-repeat;
+}
+
+
+.holder4:hover .block4{
+    display:block;
+    transition: 2s background ;
+    background-position: bottom center;
+}
+
+.holder5{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/3.png) no-repeat;
+}
+
+
+.holder5 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 11%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.block5{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/11.png) no-repeat;
+    }
+
+
+.holder5:hover .block5{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder6{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/7.png) no-repeat;
+}
+
+.holder6 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 11%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.block6{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/222.png) no-repeat;   
+}
+
+.holder6:hover .block6{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder7{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/4.png) no-repeat;
+}
+
+.holder7 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 220px 11%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+
+
+.block7{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/222.png) no-repeat; 
+}
+
+
+.holder7:hover .block7{
+    display:block;
+    transition: 2s background ;
+}
+
+.holder8{
+    position:relative;   
+    width:300px;
+    height:440px;
+    background: url(../images/8.png) no-repeat;
+    background-position: bottom center;
+}
+
+
+.holder8 h3 a{
+     color: #fff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 255px 11%;
+    display: block;
+    position: relative;
+    z-index: 1;
+   text-decoration: none;
+   text-align: center;
+    }
+
+.block8{
+    position:absolute;
+    left:0;
+    bottom:0;
+    right:0;
+    top:0;
+    display:none;
+    background: url(../images/11.png) no-repeat; 
+}
+
+
+.holder8:hover .block8{
+    display:block;
+    transition: 2s;
+    background-position: bottom center;
+}
+
+
+
+
+.about_us{
+    margin: 0 auto ;
     display: flex;
     max-width: 1920px;
     height: 100%;
-    background-image:url(../images/bg_info.jpg);
+    background-image:url(../images/bg2.png);
+    background: #2f2e2e;
 }
 
-@media (max-width: 800px) {
-  .about_tire_fitting {
-    display: inline-block;
-   
-}}
-
-  .about_tire_fitting_info{
+ @media (min-device-width : 320px) and (max-device-width : 920px){
+ .about_us {
+  flex-direction: column;
+ }}
+ .about_us_info{
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 100px 0 0 440px;
-    max-width: 505px;
+    margin: 50px 0 0 310px;
+    max-width: 800px;
   }
+ @media (min-device-width : 992px) and (max-device-width : 1450px){
+  .about_us_info {
+    margin: 100px 0 0 140px;
+    }}
 
-@media (max-width: 1450px) {
-  .about_tire_fitting_info {
-    margin: 100px 0 0 240px;
+     @media (min-device-width : 320px) and (max-device-width : 992px){
+  .about_us_info {
+   width: 100%;
+   margin: 0 auto;
+  
+    }}
 
-}}
-
-@media (max-width: 1250px) {
-  .about_tire_fitting_info {
-     margin: 100px 0 0 140px;
-}}
-
-@media (max-width: 900px) {
-  .about_tire_fitting_info {
-     margin: 100px 0 0 10px;
-   }}
-
-@media (max-width: 800px) {
-  .about_tire_fitting_info {
-     display: inline-block; 
-     margin: 10px 25% 0 25%;
-}}
-
-@media (max-width: 480px) {
-  .about_tire_fitting_info {
-     margin: 10px 10% 0 15%;
-
-}}
-
-  .about_tire_fitting_info h1{
+  .about_us_info h1{
      margin-left: 175px;
      color: #db1515;
      font-family: 'Exo 2', sans-serif;
@@ -197,192 +556,103 @@ color: purple;
      line-height: 19.27px;
      text-transform: uppercase;
 }
-@media (max-width: 1450px) {
-  .about_tire_fitting_info h1 {
-    margin-left: 100px
 
-}}
-@media (max-width: 1250px) {
-  .about_tire_fitting_info h1 {
-     margin-left: 50px
+     @media (min-device-width : 320px) and (max-device-width : 992px){
+  .about_us_info h1{
+     margin: 20px auto;
+  
+    }}
 
-}}
-@media (max-width: 350px) {
-  .about_tire_fitting_info h1 {
-     margin-left: 25px
-
-}}
-
-.about_tire_fitting_info li{
-    list-style: none;
-}
-
-.about_tire_fitting_info li a{
-    display: flex;
-    padding-left: 39px;
-    padding-top:10px;
-    color: #ffffff;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    text-transform: uppercase;
-    text-decoration: none;
-}
-
-.about_tire_fitting_style{
-    margin-top: 57px;
-    width: 281px;
-    height: 32px;
-    background-image:url(../images/info_div.png) ;
-}
-
-.balancing{
-    max-width: 400px;
-}
+.about_us_text{
+  max-width: 900px;
+ }
 
 p{
-    color: #1c1b1b;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
+  color: white;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
 }
 
-.disks_kind{
-     display: inline-block;
-     padding: 20px;
-}
-
-.painting_disks{
-     max-width: 400px;
-}
-
-.about_tire_fitting_contact{
+.about_us_contact{
     width: 50%;
     display: flex;
     flex-direction: column;
-}
-@media (max-width: 800px) {
-  .about_tire_fitting_contact {
-    display: inline-block;
-    margin: 10px 25% 0 25%;
-}}
-@media (max-width: 620px) {
-  .about_tire_fitting_contact {
-    margin: 10px 10% 0 15%;
-}}
-@media (max-width: 480px) {
-  .about_tire_fitting_contact {
-    margin: 10px 10% 0 5%;
-}}
+  }
+ @media (min-device-width : 320px) and (max-device-width : 920px){
+ .about_us_contact {
+ width: 100%;
+ margin: 0 auto;
+ padding-bottom: 25px;
+ }}
+
 
 .location{
-    margin: 100px 0 0 240px;
+  width:316px;
+   height:265px;
+    margin: 150px 0 0 140px;
+    border: 1.5px solid red;
+
   }
 
-@media (max-width: 1450px) {
-  .location {
-     margin: 100px 0 0 140px;
-}}
-@media (max-width: 1250px) {
-  .location {
-     margin: 100px 0 0 40px;
-}}
-@media (max-width: 900px) {
-  .location {
-     margin: 100px 0 0 10px;
-}}
-@media (max-width: 800px) {
-  .location {
-     margin: 50px 0 0 0;
-}}
-@media (max-width: 480px) {
-  .location {
-     margin-left: 50px;
-}}
-@media (max-width: 400px) {
-  .location {
-     margin-left: 25px;
-}}
-@media (max-width: 360px) {
-  .location {
-     margin-left: 10px;
-}}
-@media (max-width: 340px) {
-  .location {
-     margin-left: -12px;
-}}
+   @media (min-device-width : 320px) and (max-device-width : 920px){
+ .location {
+ margin: 0 auto;
+ }}
 
 
-  .contacts_street{
-    margin: 100px 0 0 450px;
-}
-@media (max-width: 1450px) {
-  .contacts_street {
-    margin: 100px 0 0 250px;
 
-}}
-@media (max-width: 900px) {
-  .contacts_street {
-    margin: 100px 0 0 100px;
-
-}}
-@media (max-width: 450px) {
-  .contacts_street {
-     margin-left: 25% ;
-}}
-
-.contacts_street h2{
-    color: #db1515;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 19.27px;
-    text-transform: uppercase;
-}
-.contacts_street h3{
-    display: flex;
-    color: #1c1b1b;
-    font-family: 'Exo 2', sans-serif;
-    font-size: 18px;
-    font-weight: 400;
-}
-.phone_number{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 220px;
-    margin-top: -30px;        
-    background: url(../images/tel.png) no-repeat ;
-    background-position: left ;
-}
-.footer {
+  
+ .footer{
+   display: flex;
+   flex-direction: row;
     width: 100%;
     height: 375px;
     background: url(../images/footer.jpg) no-repeat center;
 }
-.footer_logo {
-    display: flex;
-    margin: 0 auto;
-    width: 465px;
-    height: 290px ;
-    background: url(../images/logo1.png) no-repeat ;
-    background-position: left bottom;
-}
-.footer_img{
-    margin-top: 150px;
-}
-.footer_tel{
-    margin: 150px 0 25px 200px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+.footer_info{
+  margin: 0 auto;
+   display: flex;
+   flex-direction: row;
+  flex-wrap: wrap;
     justify-content: space-around;
+    align-items: center;
+  width: 470px;
+  height: 190px;
 }
-@media (max-width: 900px) {
-  .footer_tel {
-    margin: 150px 0 25px 180px;
 
-}}
+
+@media (min-device-width : 320px) and (max-device-width : 480px){
+ .footer_info {
+ flex-direction: column;
+ height: auto;
+ margin: 0 auto;
+ 
+ }
+ .footer{
+   background: #262626;
+ }
+
+}
+
+.logo_footer{
+  display: flex;
+  margin-top: 180px;
+  }
+ @media (min-device-width : 320px) and (max-device-width : 480px){
+ .logo_footer {
+margin: 5px auto 0;
+ }}
+
+.footer_tel{
+  margin-top: 150px;
+}
+@media (min-device-width : 320px) and (max-device-width : 480px){
+ .footer_tel {
+ margin: 0 auto;
+ }}
+
+
 .footer_tel h2{
     color: #db1515;
     font-family: 'Exo 2', sans-serif;

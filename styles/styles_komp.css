@@ -1,0 +1,324 @@
+html{
+  overflow-x: hidden;
+}
+
+body {
+height: 100%;
+width: 100%;
+overflow-x: hidden;
+
+}
+/* Intro */
+
+.intro {
+    size: 100%;
+    width: 100%;
+    height: 550px;
+    margin: 0 auto;
+    display: block;
+    background: url(../images/komp_diagn.jpg) no-repeat center;
+    
+    
+}
+
+.intro_about_logo{
+ margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 850px;
+    height: 150px ;
+    background: url(../images/navi.png) no-repeat ;
+    background-position: center;
+ 
+
+}
+
+.make_block{
+  display: flex;
+  margin: 15px 0 0 15px;
+}
+
+.menu{
+  margin:20px 0 25px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  width: 460px;
+  height: 50px ;
+    }
+
+.menu li{
+  list-style: none;
+ }
+
+.menu li a {
+  width: 52px;
+  height: 13px;
+  color: #ffffff;
+  font-family: 'Exo 2', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 13.54px;
+  text-decoration: none;
+}
+
+
+@media (min-device-width : 320px) and (max-device-width : 768px){
+.intro_about_logo {
+    display: inline-block;
+    background: none;
+    width: 300px;
+    height: 100%;
+    margin: 0 25%;
+}
+  .intro{
+    height: 400px;
+}
+  .menu {
+    display: inline-block;
+    background: none;
+    margin:25px 0 0 25%;
+    padding-bottom: 50px;
+}
+
+  .menu li {
+    padding-top: 15px;
+}
+
+  .menu li a{
+    font-size: 26px;
+    text-shadow: 0px 0px 6px rgba(255,255,255,0.7);
+}
+}
+
+}
+
+
+.about_tire_fitting{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 1920px;
+    height: 100%;
+ }
+
+.tire{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 1280px;
+    height: auto;
+    background-image:url(../images/bg_info.jpg);
+
+}
+
+  .about_tire_fitting_info{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 50px 0 0 10px;
+  
+  }
+
+
+
+  .about_tire_fitting_info h1{
+     margin: 20px auto 0;
+     color: #db1515;
+     font-family: 'Exo 2', sans-serif;
+     font-size: 30px;
+     font-weight: 400;
+     line-height: 19.27px;
+     text-transform: uppercase;
+}
+
+
+.about_tire_fitting_info li{
+    list-style: none;
+}
+
+.about_tire_fitting_info li a{
+    display: flex;
+    padding-left: 39px;
+    padding-top:10px;
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+
+p{
+    color: #1c1b1b;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.disks_kind{
+     display: inline-block;
+     padding: 20px;
+}
+
+.about_tire_fitting_contact{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+
+}
+
+.location{
+    margin: 100px 0 0 240px;
+  }
+
+  .contacts_street{
+    margin: 100px 0 0 10px;
+}
+
+.contacts_street h2{
+    color: #db1515;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 19.27px;
+    text-transform: uppercase;
+}
+.contacts_street h3{
+    display: flex;
+    color: #1c1b1b;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+.phone_number{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 220px;
+    margin-top: -30px;        
+    background: url(../images/tel.png) no-repeat ;
+    background-position: left ;
+}
+
+
+@media (min-device-width : 940px) and (max-device-width : 1220px){
+  .location{
+    margin: 100px 0 0 40px;
+  }
+
+   .about_tire_fitting_info{
+    width: 400px;
+   }
+   .about_tire_fitting_info h1{
+     margin: 0 auto;
+   }
+}
+
+
+@media (min-device-width : 768px) and (max-device-width : 940px){
+
+  .location{
+    margin: 100px 0 0 -120px;
+  }
+
+   .about_tire_fitting_info{
+    width: 400px;
+    margin: 20px 0 0 -50px;
+  }
+
+    .about_tire_fitting_info h1{
+     margin: 0 auto;
+   }
+}
+
+
+@media (min-device-width : 320px) and (max-device-width : 768px){
+
+  .about_tire_fitting_info h1{
+    margin: 20px auto 0;
+   }
+
+.tire{
+    flex-direction: column;
+    width: 100%;
+}
+
+.about_tire_fitting_info{
+    margin: 0 auto;
+    width: 100%;
+}
+
+.about_tire_fitting_contact{
+    margin: 50px auto;
+    width: 100%;
+}
+
+.location{
+    margin: 0 auto;
+}
+}
+
+ .footer{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 375px;
+    background: url(../images/footer.jpg) no-repeat center;
+    background: #262626;
+}
+.footer_info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 470px;
+    height: 190px;
+}
+.logo_footer{
+    display: flex;
+    margin-top: 180px;
+  }
+
+.footer_tel{
+  margin-top: 150px;
+}
+
+@media (min-device-width : 320px) and (max-device-width : 480px){
+ .footer_info {
+     flex-direction: column;
+     height: auto;
+     margin: 0 auto;
+ 
+ }
+ .logo_footer {
+    margin: 5px auto 0;
+ }
+
+.footer_tel {
+     margin: 0 auto;
+ }
+
+}
+
+.footer_tel h2{
+    color: #db1515;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.footer_tel h3{
+    color: #ffffff;
+    font-family: 'Exo 2', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+}
+
