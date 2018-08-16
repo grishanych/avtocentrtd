@@ -112,9 +112,7 @@
 	</div>
 	</div>
 	<div class="about_us_contact"> 
-	<div class="location">
-		<iframe src="https://www.google.com/maps/embed?pb=!1m19!1m8!1m3!1d20599.48215652908!2d24.028412!3d49.8060846!3m2!1i1024!2i768!4f13.1!4m8!3e2!4m5!1s0x473ae7f84b710cd9%3A0x8ed20c34656f6585!2z0LLRg9C70LjRhtGPINCS0LDRgdC40LvRjyDQodGC0YPRgdCwLCAxOCwg0JvRjNCy0ZbQsiwg0JvRjNCy0ZbQstGB0YzQutCwINC-0LHQu9Cw0YHRgtGMLCA3OTAwMA!3m2!1d49.818523299999995!2d24.042702799999997!4m0!5e0!3m2!1suk!2sua!4v1530106249717" width="315" height="264" frameborder="0" style="border:0" allowfullscreen>
-		</iframe>
+	<div id="map" class="location">
 	</div>
 	</div>
 </section>
@@ -134,6 +132,35 @@
 
 
 </section>
+<script src="js/mapConfig.js"></script>
+<script>
+  function initMap() {
+    map = new google.maps.Map(document.getElementById('map'), {
+      zoom: mapZoom,
+      center: new google.maps.LatLng(mapCenter.lat, mapCenter.lng),
+      mapTypeId: 'roadmap',
+      styles: mapStyles
+    });
+
+    var features = points.map(function(point){
+      return {
+        position: new google.maps.LatLng(point.lat, point.lng),
+        type: 'avtocentr'
+      }
+    })
+    // Create markers.
+    features.forEach(function(feature) {
+      var marker = new google.maps.Marker({
+        position: feature.position,
+        icon: icons[feature.type].icon,
+        map: map
+      });
+    });
+  }
+</script>
+    <script async defer
+      src="https://maps.googleapis.com/maps/api/js?callback=initMap">
+    </script>
 
 </body>
 </html>
